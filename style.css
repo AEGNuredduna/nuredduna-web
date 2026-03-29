@@ -1,9 +1,24 @@
 :root {
     /* ========================================================== */
-    /* COLOR PRINCIPAL - FÀCILMENT MODIFICABLE                    */
-    /* Modifica aquest valor HEX per canviar el color de la web   */
+    /* COLORS DEL PROJECTE - FÀCILMENT MODIFICABLES               */
+    /* Modifica aquests valors HEX per canviar l'esquema de color */
     /* ========================================================== */
+    
+    /* Colors principals */
     --color-lila: #6b378a;
+    --color-mustard: #e3b04b;
+    
+    /* Colors de fons (Earth) */
+    --color-earth-50: #fdfbf7;
+    --color-earth-100: #f7f3e8;
+    --color-earth-200: #eedcc1;
+    
+    /* Colors de les branques (Units) */
+    --color-unit-ferrerets: #e86417;
+    --color-unit-llops: #eab308;
+    --color-unit-rangers: #3b82f6;
+    --color-unit-pioners: #ef4444;
+    --color-unit-rutes: #387a6c;
 }
 
 /* Custom Base Styles */
@@ -25,11 +40,11 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-    background: #f7f3e8; /* earth-100 */
+    background: var(--color-earth-100);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #e3b04b; /* mustard */
+    background: var(--color-mustard);
     border-radius: 4px;
 }
 
