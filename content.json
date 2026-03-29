@@ -35,7 +35,7 @@
     "ferrerets": {
       "age": "6 - 8 anys",
       "name": "Ferrerets",
-      "quote": "\"Petits passos cap a l'aventura.\"",
+      "quote": "\"Tots junts!\"",
       "desc": "Descobreixen el món per primera vegada amb els seus companys a través del joc i la imaginació.",
       "btn": "Veure el blog"
     },
@@ -48,22 +48,22 @@
     },
     "rangers": {
       "age": "11 - 14 anys",
-      "name": "Rangers i Guies",
+      "name": "Ràngers i Guies",
       "quote": "\"Sempre a punt!\"",
       "desc": "L'esperit d'aventura i l'exploració marquen aquesta etapa, treballant en petits grups (patrulles).",
       "btn": "Veure el blog"
     },
     "pioners": {
       "age": "14 - 17 anys",
-      "name": "Pioners i C.",
+      "name": "Pioners i Caravel·les",
       "quote": "\"Fent camí!\"",
       "desc": "Prenen el protagonisme dels seus projectes (empreses), reflexionant sobre els objectius.",
       "btn": "Veure el blog"
     },
     "rutes": {
       "age": "17 - 19 anys",
-      "name": "Rutes",
-      "quote": "\"Servir!\"",
+      "name": "Ruta",
+      "quote": "\"Fer servei!\"",
       "desc": "Culminació de l'etapa educativa. El servei a la societat i el compromís personal són els eixos.",
       "btn": "Veure el blog"
     }
