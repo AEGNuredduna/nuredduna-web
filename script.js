@@ -1,4 +1,29 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // 0. Load Content from content.json
+    fetch('content.json')
+        .then(response => {
+            if (!response.ok) {
+                console.warn('No s\'ha pogut carregar content.json (Falla de CORS per obrir-ho via file://?). S\'utilitza el text HTML de base.');
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            // Helper to access nested objects via string path 'nav.qui_som'
+            const getNestedProperty = (obj, path) => {
+                return path.split('.').reduce((acc, part) => acc && acc[part], obj);
+            };
+
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                const value = getNestedProperty(data, key);
+                if (value) {
+                    el.textContent = value;
+                }
+            });
+        })
+        .catch(error => console.error('Error loading content:', error));
+
     // 1. Initialize AOS (Animate On Scroll)
     AOS.init({
         duration: 800,
