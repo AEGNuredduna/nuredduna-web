@@ -1,0 +1,70 @@
+:root {
+    /* ========================================================== */
+    /* COLOR PRINCIPAL - FÀCILMENT MODIFICABLE                    */
+    /* Modifica aquest valor HEX per canviar el color de la web   */
+    /* ========================================================== */
+    --color-lila: #6600A1;
+}
+
+/* Custom Base Styles */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem; /* For sticky header */
+}
+
+/* Base custom selection color */
+::selection {
+    background-color: var(--color-lila);
+    color: #ffffff;
+}
+
+/* Custom Scrollbar for modern look */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f7f3e8; /* earth-100 */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e3b04b; /* mustard */
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-lila);
+}
+
+/* Optional hover magic for navigation links not handled by Tailwind easily */
+.nav-link {
+    position: relative;
+    text-decoration: none;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--color-lila);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* Subtle pulse animation for hero badge */
+@keyframes softPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.animate-soft-pulse {
+    animation: softPulse 3s infinite ease-in-out;
+}
