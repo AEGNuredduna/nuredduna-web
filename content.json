@@ -11,32 +11,32 @@
   },
   "hero": {
     "badge": "Agrupament Escolta i Guia",
-    "title_main": "Educant per deixar el món ",
+    "title_main": "AEG NUREDDUNA",
     "title_highlight": "millor",
-    "subtitle": "Som l'AEG Nuredduna. Estem compromesos amb el creixement personal dels infants i joves a través de la natura, el servei i la vida en grup.",
-    "btn_inscripcio": "Inscriu-t'hi",
+    "subtitle": "Treballam pel creixement personal d'infants i joves a través de la natura, l'educació en valors i la cooperació.",
+    "btn_inscripcio": "Vols formar part?",
     "btn_actualitat": "Actualitat del Cau"
   },
   "qui_som": {
-    "title": "Més que activitats del cap de setmana",
-    "para_1": "L'AEG Nuredduna és una gran família. Creiem en el mètode escolta-guia com a eina de transformació social. Eduquem en valors com l'esforç, la solidaritat, el respecte a la natura i la democràcia.",
-    "para_2_pre": "Formem part de la federació d'",
+    "title": "Qui som",
+    "para_1": "Som un agrupament laic que educa en català. Creiem en el mètode escolta-guia com a eina de transformació social. Eduquem en valors com l'autonomia, la solidaritat, el respecte a la natura i la democràcia.",
+    "para_2_pre": "Formem part de l'entitat",
     "para_2_highlight": "Escoltes i Guies de Mallorca (EGM)",
-    "para_2_post": ", aportant el nostre granet d'arena per construir una societat més justa i sostenible.",
+    "para_2_post": "Eixos:",
     "natura_title": "Natura:",
-    "natura_desc": "Aprenem estimant i respectant el nostre entorn.",
-    "equip_title": "Equip:",
-    "equip_desc": "Creixem junts, l'equip de caps forma una gran xarxa.",
+    "natura_desc": "respecte a la natura, sortides...",
+    "equip_title": "País:",
+    "equip_desc": "cultura, català...",
     "btn_metode": "Descobreix el nostre mètode"
   },
   "branques": {
-    "title": "Les Nostres Branques",
-    "subtitle": "Ens dividim per grups d'edat per adaptar les activitats al moment vital de cada infant i jove. Pots visitar el blog en directe de cada unitat!",
+    "title": "Les Nostres Unitats",
+    "subtitle": "Ens dividim per grups d'edat per adaptar les activitats a l'etapa vital de cada infant i jove. Pots visitar el blog en directe de cada unitat!",
     "ferrerets": {
       "age": "6 - 8 anys",
       "name": "Ferrerets",
       "quote": "\"Tots junts!\"",
-      "desc": "Descobreixen el món per primera vegada amb els seus companys a través del joc i la imaginació.",
+      "desc": "Descobreixen el món a través del joc i la imaginació.",
       "btn": "Veure el blog"
     },
     "llops": {
