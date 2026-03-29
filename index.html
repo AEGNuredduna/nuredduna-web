@@ -31,18 +31,18 @@
                         // AQUÍ ENLLACEM TAILWIND AMB LA VARIABLE CSS PERQUÈ SIGUI:
                         // "Fàcilment Modificable" des del document style.css!
                         lila: 'var(--color-lila)',
-                        mustard: '#e3b04b',
+                        mustard: 'var(--color-mustard)',
                         earth: {
-                            50: '#fdfbf7',
-                            100: '#f7f3e8',
-                            200: '#eedcc1',
+                            50: 'var(--color-earth-50)',
+                            100: 'var(--color-earth-100)',
+                            200: 'var(--color-earth-200)',
                         },
                         unit: {
-                            ferrerets: '#e86417', // Taronja
-                            llops: '#eab308',     // Groc més fosc
-                            rangers: '#3b82f6',   // Blau
-                            pioners: '#ef4444',   // Vermell
-                            rutes: '#387a6c',     // Verd/Turquesa
+                            ferrerets: 'var(--color-unit-ferrerets)',
+                            llops: 'var(--color-unit-llops)',
+                            rangers: 'var(--color-unit-rangers)',
+                            pioners: 'var(--color-unit-pioners)',
+                            rutes: 'var(--color-unit-rutes)',
                         }
                     },
                     fontFamily: {
@@ -64,11 +64,9 @@
             <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
-                    <a href="#" class="flex items-center gap-2">
-                        <div
-                            class="w-10 h-10 bg-lila rounded-full flex items-center justify-center text-white font-heading font-bold text-xl shadow-md">
-                            N
-                        </div>
+                    <a href="#" class="flex items-center gap-3 group">
+                        <img src="img/AEGNuredduna.png" alt="Logo AEG Nuredduna"
+                            class="h-12 w-auto object-contain transition-transform group-hover:scale-105 duration-300">
                         <span class="font-heading font-bold text-xl text-lila tracking-tight hidden sm:block">AEG
                             Nuredduna</span>
                     </a>
