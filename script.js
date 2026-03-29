@@ -18,7 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 const key = el.getAttribute('data-i18n');
                 const value = getNestedProperty(data, key);
                 if (value) {
-                    el.textContent = value;
+                    if (typeof value === 'string' && value.includes('\n')) {
+                        el.innerHTML = value.replace(/\n/g, '<br>');
+                    } else {
+                        el.textContent = value;
+                    }
                 }
             });
         })
