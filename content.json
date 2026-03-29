@@ -1,0 +1,120 @@
+{
+  "nav": {
+    "qui_som": "Qui Som",
+    "branques": "Branques",
+    "actualitat": "Actualitat",
+    "families": "Famílies",
+    "inscripcio": "Inscripció",
+    "contacte": "Contacte",
+    "principis": "Principis",
+    "metode": "Mètode Escolta i Guia"
+  },
+  "hero": {
+    "badge": "Agrupament Escolta i Guia",
+    "title_main": "Educant per deixar el món ",
+    "title_highlight": "millor",
+    "subtitle": "Som l'AEG Nuredduna de Mallorca. Estem compromesos amb el creixement personal dels infants i joves a través de la natura, el servei i la vida en grup.",
+    "btn_inscripcio": "Inscriu-t'hi",
+    "btn_actualitat": "Actualitat del Cau"
+  },
+  "qui_som": {
+    "title": "Més que activitats del cap de setmana",
+    "para_1": "L'AEG Nuredduna és una gran família. Creiem en el mètode escolta-guia com a eina de transformació social. Eduquem en valors com l'esforç, la solidaritat, el respecte a la natura i la democràcia.",
+    "para_2_pre": "Formem part de la federació d'",
+    "para_2_highlight": "Escoltes i Guies de Mallorca (EGM)",
+    "para_2_post": ", aportant el nostre granet d'arena per construir una societat més justa i sostenible.",
+    "natura_title": "Natura:",
+    "natura_desc": "Aprenem estimant i respectant el nostre entorn.",
+    "equip_title": "Equip:",
+    "equip_desc": "Creixem junts, l'equip de caps forma una gran xarxa.",
+    "btn_metode": "Descobreix el nostre mètode"
+  },
+  "branques": {
+    "title": "Les Nostres Branques",
+    "subtitle": "Ens dividim per grups d'edat per adaptar les activitats al moment vital de cada infant i jove. Pots visitar el blog en directe de cada unitat!",
+    "ferrerets": {
+      "age": "6 - 8 anys",
+      "name": "Ferrerets",
+      "quote": "\"Petits passos cap a l'aventura.\"",
+      "desc": "Descobreixen el món per primera vegada amb els seus companys a través del joc i la imaginació.",
+      "btn": "Veure el blog"
+    },
+    "llops": {
+      "age": "8 - 11 anys",
+      "name": "Llops i Daines",
+      "quote": "\"Tant com puc!\"",
+      "desc": "Aprenen a viure en grup (l'estol), assumint petites responsabilitats i vivint grans caceres.",
+      "btn": "Veure el blog"
+    },
+    "rangers": {
+      "age": "11 - 14 anys",
+      "name": "Rangers i Guies",
+      "quote": "\"Sempre a punt!\"",
+      "desc": "L'esperit d'aventura i l'exploració marquen aquesta etapa, treballant en petits grups (patrulles).",
+      "btn": "Veure el blog"
+    },
+    "pioners": {
+      "age": "14 - 17 anys",
+      "name": "Pioners i C.",
+      "quote": "\"Fent camí!\"",
+      "desc": "Prenen el protagonisme dels seus projectes (empreses), reflexionant sobre els objectius.",
+      "btn": "Veure el blog"
+    },
+    "rutes": {
+      "age": "17 - 19 anys",
+      "name": "Rutes",
+      "quote": "\"Servir!\"",
+      "desc": "Culminació de l'etapa educativa. El servei a la societat i el compromís personal són els eixos.",
+      "btn": "Veure el blog"
+    }
+  },
+  "actualitat": {
+    "title": "Actualitat al Cau",
+    "subtitle": "Descobreix les últimes notícies, esdeveniments i festes del nostre agrupament directament des del blog.",
+    "btn_more": "Llegir més Notícies",
+    "btn_read": "Llegir notícia"
+  },
+  "families": {
+    "title": "Racó de les Famílies",
+    "subtitle": "Les famílies sou una part fonamental de l'agrupament. Aquí teniu informació important referent a documents i prevenció.",
+    "doc_1_title": "Protocol per la prevenció",
+    "doc_1_desc": "Protocol per la prevenció de l'abús sexual al cau",
+    "doc_2_title": "Documents de l'AEG",
+    "doc_2_desc": "Formularis importants i fitxa de salut"
+  },
+  "contacte": {
+    "title": "Contacta amb Nosaltres",
+    "subtitle": "Tens algun dubte? Vols apuntar el teu fill/a? Escriu-nos i et respondrem tan aviat com ens sigui possible.",
+    "location_title": "El nostre Cau",
+    "location_desc": "Palma, Illes Balears",
+    "email_link": "Contacte a través del blog o form",
+    "form": {
+      "name": "Nom i Llinatges",
+      "email": "Correu Electrònic",
+      "unit": "Branca d'interès",
+      "select_default": "Selecciona una opció...",
+      "message": "Missatge",
+      "btn_submit": "Enviar Missatge",
+      "opt_ferrerets": "Ferrerets",
+      "opt_llops": "Llops i Daines",
+      "opt_rangers": "Rangers i Guies",
+      "opt_pioners": "Pioners i Caravel·les",
+      "opt_rutes": "Rutes",
+      "opt_dubte": "Dubte general"
+    }
+  },
+  "footer": {
+    "brand_name": "AEG Nuredduna",
+    "brand_desc": "Agrupament Escolta i Guia. Educant infants i joves a Mallorca per construir un món més just i solidari.",
+    "info_title": "Més informació",
+    "info_link_1": "Els nostres Principis",
+    "info_link_2": "Mètode Escolta-Guia",
+    "info_link_3": "Nuredduna (La Figura)",
+    "info_link_4": "Vull inscriure'm!",
+    "member_title": "Entitat Membre",
+    "member_name": "EGM",
+    "member_desc": "Escoltes i Guies\nde Mallorca",
+    "copyright": "© 2026 AEG Nuredduna. Tots els drets reservats.",
+    "blog_link": "Visitar Blog Original"
+  }
+}
