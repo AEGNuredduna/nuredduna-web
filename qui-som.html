@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ca" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qui Som - AEG Nuredduna</title>
+    <meta name="description" content="Coneix l'AEG Nuredduna, la nostra història, valors i el mètode escolta i guia.">
+    <meta name="robots" content="noindex, nofollow">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        lila: 'var(--color-lila)',
+                        mustard: 'var(--color-mustard)',
+                        beige: 'var(--color-beige)',
+                        earth: {
+                            50: 'var(--color-earth-50)',
+                            100: 'var(--color-earth-100)',
+                            200: 'var(--color-earth-200)',
+                        },
+                        unit: {
+                            ferrerets: 'var(--color-unit-ferrerets)',
+                            llops: 'var(--color-unit-llops)',
+                            rangers: 'var(--color-unit-rangers)',
+                            pioners: 'var(--color-unit-pioners)',
+                            rutes: 'var(--color-unit-rutes)',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans bg-earth-50 text-gray-800 antialiased overflow-x-hidden">
+
+    <!-- Header & Nav -->
+    <header id="main-header" class="fixed w-full top-0 z-50 bg-earth-50/90 backdrop-blur-md shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="flex items-center gap-3 group">
+                        <img src="img/Logonuredduna.jpg" alt="Logo AEG Nuredduna" class="h-16 w-auto object-contain transition-transform group-hover:scale-105 duration-300">
+                    </a>
+                </div>
+
+                <nav class="hidden lg:flex space-x-6 lg:space-x-8 items-center">
+                    <a href="qui-som.html" data-i18n="nav.qui_som" class="text-lila transition-colors font-bold">Qui Som</a>
+                    <a href="index.html#actualitat" data-i18n="nav.actualitat" class="text-gray-600 hover:text-lila transition-colors font-medium">Actualitat</a>
+                    <a href="index.html#branques" data-i18n="nav.branques" class="text-gray-600 hover:text-lila transition-colors font-medium">Branques</a>
+                    <a href="families.html" data-i18n="nav.families" class="text-gray-600 hover:text-lila transition-colors font-medium">Famílies</a>
+                    <a href="https://aegnuredduna.blogspot.com/p/incripcio.html" data-i18n="nav.inscripcio" target="_blank" class="text-lila border border-lila hover:bg-lila/10 transition-colors font-medium px-4 py-2 rounded-full">Inscripció</a>
+                    <a href="contacte.html" data-i18n="nav.contacte" class="bg-mustard hover:bg-yellow-500 text-lila font-semibold px-5 py-2.5 rounded-full shadow-sm hover:shadow-md transition-all transform hover:-translate-y-0.5">Contacte</a>
+                </nav>
+
+                <div class="lg:hidden flex items-center gap-4">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-lila focus:outline-none p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="lg:hidden hidden bg-earth-50 shadow-lg absolute w-full border-t border-earth-100">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="qui-som.html" data-i18n="nav.qui_som" class="mobile-link block px-3 py-2 text-base font-medium text-lila bg-earth-100 rounded-md">Qui Som</a>
+                <a href="index.html#branques" data-i18n="nav.branques" class="mobile-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-lila hover:bg-earth-100 rounded-md">Branques</a>
+                <a href="index.html#actualitat" data-i18n="nav.actualitat" class="mobile-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-lila hover:bg-earth-100 rounded-md">Actualitat</a>
+                <a href="families.html" data-i18n="nav.families" class="mobile-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-lila hover:bg-earth-100 rounded-md">Famílies</a>
+                <a href="contacte.html" data-i18n="nav.contacte" class="mobile-link block px-3 py-2 text-base font-medium text-lila bg-mustard hover:bg-yellow-500 rounded-md mt-4 text-center">Contacte</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-20">
+        <!-- Page Title -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12" data-aos="fade-down">
+            <h1 data-i18n="nav.qui_som" class="text-4xl md:text-5xl font-heading font-extrabold text-lila">Qui Som</h1>
+            <div class="h-1.5 w-20 bg-mustard mt-4 rounded-full"></div>
+        </div>
+
+        <!-- Qui Som Content -->
+        <section id="qui-som" class="py-12 bg-white relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div data-aos="fade-right">
+                        <div class="aspect-square bg-earth-100 rounded-3xl overflow-hidden relative group">
+                            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                                alt="Grup destudiants a la natura"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-lila/20 group-hover:bg-transparent transition-colors duration-500"></div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left">
+                        <h2 data-i18n="qui_som.title" class="text-3xl md:text-4xl font-heading font-bold text-lila mb-6">Més que activitats del cap de setmana</h2>
+                        <p data-i18n="qui_som.para_1" class="text-lg text-gray-600 mb-6 leading-relaxed">
+                            L'AEG Nuredduna és una gran família. Creiem en el mètode escolta-guia com a eina de transformació social. Eduquem en valors com l'esforç, la solidaritat, el respecte a la natura i la democràcia.
+                        </p>
+                        <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                            <span data-i18n="qui_som.para_2_pre">Formem part de la federació d'</span><strong data-i18n="qui_som.para_2_highlight" class="text-lila">Escoltes i Guies de Mallorca (EGM)</strong><span data-i18n="qui_som.para_2_post">, aportant el nostre granet d'arena per construir una societat més justa i sostenible.</span>
+                        </p>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 text-mustard mt-0.5 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span class="text-gray-700"><strong data-i18n="qui_som.natura_title">Natura:</strong> <span data-i18n="qui_som.natura_desc">Aprenem estimant i respectant el nostre entorn.</span></span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="h-6 w-6 text-mustard mt-0.5 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                </svg>
+                                <span class="text-gray-700"><strong data-i18n="qui_som.equip_title">Equip:</strong> <span data-i18n="qui_som.equip_desc">Creixem junts, l'equip de caps forma una gran xarxa.</span></span>
+                            </li>
+                        </ul>
+                        <a href="http://aegnuredduna.blogspot.com/p/metode.html" target="_blank" class="inline-flex items-center text-lila font-semibold hover:text-purple-800 transition-colors">
+                            <span data-i18n="qui_som.btn_metode">Descobreix el nostre mètode</span>
+                            <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-lila pt-16 pb-8 text-earth-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-12 mb-12">
+                <div>
+                    <a href="index.html" class="flex items-center gap-3 mb-6">
+                        <img src="img/Logonuredduna.jpg" alt="Logo AEG Nuredduna" class="h-12 w-auto object-contain rounded-lg">
+                        <span data-i18n="footer.brand_name" class="font-heading font-bold text-2xl text-white">AEG
+                            Nuredduna</span>
+                    </a>
+                    <p data-i18n="footer.brand_desc" class="text-white/70 mb-6">Agrupament Escolta i Guia. Educant infants i joves a Mallorca per construir un món més just i solidari.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/aeg_nuredduna/" target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-mustard hover:text-lila transition-colors text-white">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 data-i18n="footer.info_title" class="text-white font-bold font-heading mb-4 text-lg">Més informació</h4>
+                    <ul class="space-y-3">
+                        <li><a href="http://aegnuredduna.blogspot.com/p/principis.html" data-i18n="footer.info_link_1" target="_blank" class="text-white/70 hover:text-mustard transition-colors">Els nostres Principis</a></li>
+                        <li><a href="http://aegnuredduna.blogspot.com/p/metode.html" data-i18n="footer.info_link_2" target="_blank" class="text-white/70 hover:text-mustard transition-colors">Mètode Escolta-Guia</a></li>
+                        <li><a href="http://aegnuredduna.blogspot.com/p/nuredduna.html" data-i18n="footer.info_link_3" target="_blank" class="text-white/70 hover:text-mustard transition-colors">Nuredduna (La Figura)</a></li>
+                        <li><a href="https://aegnuredduna.blogspot.com/p/incripcio.html" data-i18n="footer.info_link_4" target="_blank" class="text-white/70 text-mustard font-semibold hover:text-yellow-400 transition-colors">Vull inscriure'm!</a></li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col items-start lg:items-end text-left lg:text-right">
+                    <h4 data-i18n="footer.member_title" class="text-white font-bold font-heading mb-4 text-lg">Entitat Membre</h4>
+                    <a href="http://www.escoltesiguiesdemallorca.org" target="_blank" class="bg-white p-3 rounded-xl mb-4 w-48 text-center shadow-lg hover:bg-earth-100 transition-colors block">
+                        <span data-i18n="footer.member_name" class="font-bold text-gray-800 tracking-tight">EGM</span>
+                        <p data-i18n="footer.member_desc" class="text-[10px] text-gray-500 uppercase leading-tight font-semibold mt-1">Escoltes i Guies<br>de Mallorca</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-white/50">
+                <p data-i18n="footer.copyright">&copy; 2026 AEG Nuredduna. Tots els drets reservats.</p>
+                <div class="space-x-4 mt-4 md:mt-0 items-center flex">
+                    <a href="https://aegnuredduna.blogspot.com/" data-i18n="footer.blog_link" target="_blank" class="hover:text-white transition-colors border border-white/20 px-3 py-1 rounded-lg">Visitar Blog Original</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

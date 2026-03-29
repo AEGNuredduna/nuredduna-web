@@ -32,6 +32,7 @@
                         // "Fàcilment Modificable" des del document style.css!
                         lila: 'var(--color-lila)',
                         mustard: 'var(--color-mustard)',
+                        beige: 'var(--color-beige)',
                         earth: {
                             50: 'var(--color-earth-50)',
                             100: 'var(--color-earth-100)',
@@ -72,18 +73,18 @@
 
                 <!-- Desktop Menu -->
                 <nav class="hidden lg:flex space-x-6 lg:space-x-8 items-center">
-                    <a href="#qui-som" data-i18n="nav.qui_som"
+                    <a href="qui-som.html" data-i18n="nav.qui_som"
                         class="text-gray-600 hover:text-lila transition-colors font-medium">Qui Som</a>
-                    <a href="#branques" data-i18n="nav.branques"
-                        class="text-gray-600 hover:text-lila transition-colors font-medium">Branques</a>
                     <a href="#actualitat" data-i18n="nav.actualitat"
                         class="text-gray-600 hover:text-lila transition-colors font-medium">Actualitat</a>
-                    <a href="#families" data-i18n="nav.families"
+                    <a href="#branques" data-i18n="nav.branques"
+                        class="text-gray-600 hover:text-lila transition-colors font-medium">Branques</a>
+                    <a href="families.html" data-i18n="nav.families"
                         class="text-gray-600 hover:text-lila transition-colors font-medium">Famílies</a>
                     <a href="https://aegnuredduna.blogspot.com/p/incripcio.html" data-i18n="nav.inscripcio"
                         target="_blank"
                         class="text-lila border border-lila hover:bg-lila/10 transition-colors font-medium px-4 py-2 rounded-full">Inscripció</a>
-                    <a href="#contacte" data-i18n="nav.contacte"
+                    <a href="contacte.html" data-i18n="nav.contacte"
                         class="bg-mustard hover:bg-yellow-500 text-lila font-semibold px-5 py-2.5 rounded-full shadow-sm hover:shadow-md transition-all transform hover:-translate-y-0.5">Contacte</a>
                 </nav>
 
@@ -105,21 +106,16 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="lg:hidden hidden bg-earth-50 shadow-lg absolute w-full border-t border-earth-100">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#qui-som" data-i18n="nav.qui_som"
+                <a href="qui-som.html" data-i18n="nav.qui_som"
                     class="mobile-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-lila hover:bg-earth-100 rounded-md">Qui
                     Som</a>
-                <a href="#branques" data-i18n="nav.branques"
-                    class="mobile-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-lila hover:bg-earth-100 rounded-md">Branques</a>
                 <a href="#actualitat" data-i18n="nav.actualitat"
                     class="mobile-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-lila hover:bg-earth-100 rounded-md">Actualitat</a>
-                <a href="#families" data-i18n="nav.families"
+                <a href="#branques" data-i18n="nav.branques"
+                    class="mobile-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-lila hover:bg-earth-100 rounded-md">Branques</a>
+                <a href="families.html" data-i18n="nav.families"
                     class="mobile-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-lila hover:bg-earth-100 rounded-md">Famílies</a>
-                <a href="http://aegnuredduna.blogspot.com/p/principis.html" data-i18n="nav.principis" target="_blank"
-                    class="mobile-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-lila hover:bg-earth-100 rounded-md">Principis</a>
-                <a href="http://aegnuredduna.blogspot.com/p/metode.html" data-i18n="nav.metode" target="_blank"
-                    class="mobile-link block px-3 py-2 text-base font-medium text-gray-700 hover:text-lila hover:bg-earth-100 rounded-md">Mètode
-                    Escolta i Guia</a>
-                <a href="#contacte" data-i18n="nav.contacte"
+                <a href="contacte.html" data-i18n="nav.contacte"
                     class="mobile-link block px-3 py-2 text-base font-medium text-lila bg-mustard hover:bg-yellow-500 rounded-md mt-4 text-center">Contacte</a>
             </div>
         </div>
@@ -165,206 +161,22 @@
         </div>
     </section>
 
-    <!-- Qui Som Section -->
-    <section id="qui-som" class="py-20 bg-white relative">
+    <!-- Actualitat -->
+    <section id="actualitat" class="py-24 bg-beige text-lila">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 border-b border-lila/20 pb-6">
                 <div data-aos="fade-right">
-                    <div class="aspect-square bg-earth-100 rounded-3xl overflow-hidden relative group">
-                        <!-- Placeholder per foto real -->
-                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                            alt="Grup destudiants a la natura"
-                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                        <div
-                            class="absolute inset-0 bg-lila/20 group-hover:bg-transparent transition-colors duration-500">
-                        </div>
-                    </div>
-                </div>
-                <div data-aos="fade-left">
-                    <h2 data-i18n="qui_som.title" class="text-3xl md:text-4xl font-heading font-bold text-lila mb-6">Més
-                        que activitats del cap de setmana</h2>
-                    <p data-i18n="qui_som.para_1" class="text-lg text-gray-600 mb-6 leading-relaxed">
-                        L'AEG Nuredduna és una gran família. Creiem en el mètode escolta-guia com a eina de
-                        transformació social. Eduquem en valors com l'esforç, la solidaritat, el respecte a la natura i
-                        la democràcia.
-                    </p>
-                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-                        <span data-i18n="qui_som.para_2_pre">Formem part de la federació d'</span><strong
-                            data-i18n="qui_som.para_2_highlight" class="text-lila">Escoltes i Guies de Mallorca
-                            (EGM)</strong><span data-i18n="qui_som.para_2_post">, aportant el nostre granet d'arena per
-                            construir una societat més justa i sostenible.</span>
-                    </p>
-                    <ul class="space-y-4 mb-8">
-                        <li class="flex items-start">
-                            <svg class="h-6 w-6 text-mustard mt-0.5 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7" />
-                            </svg>
-                            <span class="text-gray-700"><strong data-i18n="qui_som.natura_title">Natura:</strong> <span
-                                    data-i18n="qui_som.natura_desc">Aprenem estimant i respectant el nostre
-                                    entorn.</span></span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="h-6 w-6 text-mustard mt-0.5 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7" />
-                            </svg>
-                            <span class="text-gray-700"><strong data-i18n="qui_som.equip_title">Equip:</strong> <span
-                                    data-i18n="qui_som.equip_desc">Creixem junts, l'equip de caps forma una gran
-                                    xarxa.</span></span>
-                        </li>
-                    </ul>
-                    <a href="http://aegnuredduna.blogspot.com/p/metode.html" target="_blank"
-                        class="inline-flex items-center text-lila font-semibold hover:text-purple-800 transition-colors">
-                        <span data-i18n="qui_som.btn_metode">Descobreix el nostre mètode</span>
-                        <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Branques Section -->
-    <section id="branques" class="py-24 bg-earth-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
-                <h2 data-i18n="branques.title" class="text-3xl md:text-5xl font-heading font-bold text-lila mb-4">Les
-                    Nostres Branques</h2>
-                <p data-i18n="branques.subtitle" class="text-lg text-gray-600">
-                    Ens dividim per grups d'edat per adaptar les activitats al moment vital de cada infant i jove. Pots
-                    visitar el blog en directe de cada unitat!
-                </p>
-            </div>
-
-            <!-- Unit Cards Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-6">
-                <!-- Ferrerets -->
-                <div class="unit-card flex flex-col group bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 relative overflow-hidden border-b-4 border-unit-ferrerets"
-                    data-aos="fade-up" data-aos-delay="100">
-                    <div
-                        class="absolute top-0 right-0 w-24 h-24 bg-unit-ferrerets/10 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110">
-                    </div>
-                    <span data-i18n="branques.ferrerets.age"
-                        class="inline-block px-3 py-1 self-start bg-unit-ferrerets/20 text-yellow-800 rounded-full text-sm font-bold mb-4">6
-                        - 8 anys</span>
-                    <h3 data-i18n="branques.ferrerets.name" class="text-2xl font-heading font-bold text-gray-900 mb-2">
-                        Ferrerets</h3>
-                    <p data-i18n="branques.ferrerets.quote" class="text-unit-ferrerets font-medium mb-4 italic">"Petits
-                        passos cap a l'aventura."</p>
-                    <p data-i18n="branques.ferrerets.desc" class="text-gray-600 flex-grow text-sm mb-6">Descobreixen el
-                        món per primera vegada amb els seus companys a través del joc i la imaginació.</p>
-                    <a href="https://ferrerets.escoltesiguiesdemallorca.org/" data-i18n="branques.ferrerets.btn"
-                        target="_blank"
-                        class="text-center mt-auto bg-unit-ferrerets/10 text-unit-ferrerets hover:bg-unit-ferrerets hover:text-white py-2 rounded-xl transition-colors font-semibold">Veure
-                        el blog</a>
-                </div>
-
-                <!-- Llops i Daines -->
-                <div class="unit-card flex flex-col group bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 relative overflow-hidden border-b-4 border-unit-llops"
-                    data-aos="fade-up" data-aos-delay="200">
-                    <div
-                        class="absolute top-0 right-0 w-24 h-24 bg-unit-llops/10 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110">
-                    </div>
-                    <span data-i18n="branques.llops.age"
-                        class="inline-block px-3 py-1 self-start bg-unit-llops/20 text-orange-800 rounded-full text-sm font-bold mb-4">8
-                        - 11 anys</span>
-                    <h3 data-i18n="branques.llops.name" class="text-2xl font-heading font-bold text-gray-900 mb-2">Llops
-                        i Daines</h3>
-                    <p data-i18n="branques.llops.quote" class="text-unit-llops font-medium mb-4 italic">"Tant com puc!"
-                    </p>
-                    <p data-i18n="branques.llops.desc" class="text-gray-600 flex-grow text-sm mb-6">Aprenen a viure en
-                        grup (l'estol), assumint petites responsabilitats i vivint grans caceres.</p>
-                    <a href="https://llid.escoltesiguiesdemallorca.org/" data-i18n="branques.llops.btn" target="_blank"
-                        class="text-center mt-auto bg-unit-llops/10 text-unit-llops hover:bg-unit-llops hover:text-white py-2 rounded-xl transition-colors font-semibold">Veure
-                        el blog</a>
-                </div>
-
-                <!-- Rangers i Guies -->
-                <div class="unit-card flex flex-col group bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 relative overflow-hidden border-b-4 border-unit-rangers"
-                    data-aos="fade-up" data-aos-delay="300">
-                    <div
-                        class="absolute top-0 right-0 w-24 h-24 bg-unit-rangers/10 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110">
-                    </div>
-                    <span data-i18n="branques.rangers.age"
-                        class="inline-block px-3 py-1 self-start bg-unit-rangers/20 text-blue-800 rounded-full text-sm font-bold mb-4">11
-                        - 14 anys</span>
-                    <h3 data-i18n="branques.rangers.name" class="text-2xl font-heading font-bold text-gray-900 mb-2">
-                        Rangers i Guies</h3>
-                    <p data-i18n="branques.rangers.quote" class="text-unit-rangers font-medium mb-4 italic">"Sempre a
-                        punt!"</p>
-                    <p data-i18n="branques.rangers.desc" class="text-gray-600 flex-grow text-sm mb-6">L'esperit
-                        d'aventura i l'exploració marquen aquesta etapa, treballant en petits grups (patrulles).</p>
-                    <a href="http://rig.escoltesiguiesdemallorca.org/" data-i18n="branques.rangers.btn" target="_blank"
-                        class="text-center mt-auto bg-unit-rangers/10 text-unit-rangers hover:bg-unit-rangers hover:text-white py-2 rounded-xl transition-colors font-semibold">Veure
-                        el blog</a>
-                </div>
-
-                <!-- Pioners i Caravel·les -->
-                <div class="unit-card flex flex-col group bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 relative overflow-hidden border-b-4 border-unit-pioners"
-                    data-aos="fade-up" data-aos-delay="400">
-                    <div
-                        class="absolute top-0 right-0 w-24 h-24 bg-unit-pioners/10 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110">
-                    </div>
-                    <span data-i18n="branques.pioners.age"
-                        class="inline-block px-3 py-1 self-start bg-unit-pioners/20 text-red-800 rounded-full text-sm font-bold mb-4">14
-                        - 17 anys</span>
-                    <h3 data-i18n="branques.pioners.name" class="text-2xl font-heading font-bold text-gray-900 mb-2">
-                        Pioners i C.</h3>
-                    <p data-i18n="branques.pioners.quote" class="text-unit-pioners font-medium mb-4 italic">"Fent camí!"
-                    </p>
-                    <p data-i18n="branques.pioners.desc" class="text-gray-600 flex-grow text-sm mb-6">Prenen el
-                        protagonisme dels seus projectes (empreses), reflexionant sobre els objectius.</p>
-                    <a href="http://pic.escoltesiguiesdemallorca.org/" data-i18n="branques.pioners.btn" target="_blank"
-                        class="text-center mt-auto bg-unit-pioners/10 text-unit-pioners hover:bg-unit-pioners hover:text-white py-2 rounded-xl transition-colors font-semibold">Veure
-                        el blog</a>
-                </div>
-
-                <!-- Rutes -->
-                <div class="unit-card flex flex-col group bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 relative overflow-hidden border-b-4 border-unit-rutes md:col-start-1 md:col-end-3 xl:col-span-1"
-                    data-aos="fade-up" data-aos-delay="500">
-                    <div
-                        class="absolute top-0 right-0 w-24 h-24 bg-unit-rutes/10 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110">
-                    </div>
-                    <span data-i18n="branques.rutes.age"
-                        class="inline-block px-3 py-1 self-start bg-unit-rutes/20 text-yellow-900 rounded-full text-sm font-bold mb-4">17
-                        - 19 anys</span>
-                    <h3 data-i18n="branques.rutes.name" class="text-2xl font-heading font-bold text-gray-900 mb-2">Rutes
-                    </h3>
-                    <p data-i18n="branques.rutes.quote" class="text-unit-rutes font-medium mb-4 italic">"Servir!"</p>
-                    <p data-i18n="branques.rutes.desc" class="text-gray-600 flex-grow text-sm mb-6">Culminació de
-                        l'etapa educativa. El servei a la societat i el compromís personal són els eixos.</p>
-                    <a href="http://ruta.escoltesiguiesdemallorca.org/" data-i18n="branques.rutes.btn" target="_blank"
-                        class="text-center mt-auto bg-unit-rutes/10 text-unit-rutes hover:bg-unit-rutes hover:text-white py-2 rounded-xl transition-colors font-semibold">Veure
-                        el blog</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Actualitat (Substitueix el Calendari antic) -->
-    <section id="actualitat" class="py-24 bg-lila text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-16 border-b border-white/20 pb-6">
-                <div data-aos="fade-right">
-                    <h2 data-i18n="actualitat.title" class="text-3xl md:text-5xl font-heading font-bold mb-4">Actualitat
-                        al Cau</h2>
-                    <p data-i18n="actualitat.subtitle" class="text-earth-200 text-lg opacity-90 max-w-xl">
-                        Descobreix les últimes notícies, esdeveniments i festes del nostre agrupament directament des
-                        del blog.
+                    <h2 data-i18n="actualitat.title" class="text-3xl md:text-5xl font-heading font-bold mb-4">Actualitat al Cau</h2>
+                    <p data-i18n="actualitat.subtitle" class="text-gray-600 text-lg max-w-xl">
+                        Descobreix les últimes notícies, esdeveniments i festes del nostre agrupament directament des del blog.
                     </p>
                 </div>
                 <div data-aos="fade-left" class="mt-6 md:mt-0">
                     <a href="https://aegnuredduna.blogspot.com/" target="_blank"
-                        class="text-mustard hover:text-white font-bold transition-colors flex items-center gap-2">
-                        <span data-i18n="actualitat.btn_more">Llegir més Notícies</span> <svg class="w-5 h-5"
-                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        class="text-lila hover:text-purple-900 font-bold transition-colors flex items-center gap-2">
+                        <span data-i18n="actualitat.btn_more">Llegir més Notícies</span> 
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                         </svg>
                     </a>
                 </div>
@@ -373,238 +185,123 @@
             <!-- News Grid -->
             <div class="grid lg:grid-cols-3 gap-8">
                 <!-- Post 1 -->
-                <article
-                    class="bg-white/10 backdrop-blur-md rounded-3xl overflow-hidden border border-white/10 hover:border-mustard/50 hover:bg-white/15 transition-all group flex flex-col"
-                    data-aos="fade-up" data-aos-delay="100">
+                <article class="bg-white/60 backdrop-blur-md rounded-3xl overflow-hidden border border-lila/10 hover:border-lila/30 transition-all group flex flex-col" data-aos="fade-up" data-aos-delay="100">
                     <div class="p-8 flex flex-col h-full">
                         <div class="flex items-center gap-3 mb-4">
-                            <span
-                                class="bg-mustard text-lila text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Festa</span>
-                            <span class="text-white/60 text-sm">Gen 10</span>
+                            <span class="bg-mustard text-lila text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Festa</span>
+                            <span class="text-gray-500 text-sm">Gen 10</span>
                         </div>
-                        <h3 class="text-2xl font-heading font-bold mb-4 group-hover:text-mustard transition-colors">Sant
-                            Antoni!!!</h3>
-                        <p class="text-earth-50 opacity-80 mb-6 flex-grow line-clamp-4">
-                            Us convidem a celebrar la revetlla de Sant Antoni al cau. Iniciarem amb activitats
-                            preparades pels Pioners i Caravel·les, encesa de fogueró, i un magnífic sopar ofert pels
-                            Rutes a preus populars (6 euros). Animau-vos i duis els utils per torrar!
+                        <h3 class="text-2xl font-heading font-bold mb-4 text-lila group-hover:text-purple-900 transition-colors">Sant Antoni!!!</h3>
+                        <p class="text-gray-600 mb-6 flex-grow line-clamp-4">
+                            Us convidem a celebrar la revetlla de Sant Antoni al cau. Iniciarem amb activitats preparades pels Pioners i Caravel·les, encesa de fogueró, i un magnífic sopar ofert pels Rutes a preus populars (6 euros). Animau-vos i duis els utils per torrar!
                         </p>
-                        <a href="https://nuredduna.escoltesiguiesdemallorca.org/2025/12/sant-antoni.html"
-                            target="_blank"
-                            class="inline-block border border-white/30 text-white rounded-xl px-5 py-2 text-center hover:bg-white hover:text-lila transition-colors font-medium">Llegir
-                            notícia</a>
+                        <a href="https://nuredduna.escoltesiguiesdemallorca.org/2025/12/sant-antoni.html" target="_blank" class="inline-block border border-lila/30 text-lila rounded-xl px-5 py-2 text-center hover:bg-lila hover:text-white transition-colors font-medium">Llegir notícia</a>
                     </div>
                 </article>
 
                 <!-- Post 2 -->
-                <article
-                    class="bg-white/10 backdrop-blur-md rounded-3xl overflow-hidden border border-white/10 hover:border-mustard/50 hover:bg-white/15 transition-all group flex flex-col"
-                    data-aos="fade-up" data-aos-delay="200">
+                <article class="bg-white/60 backdrop-blur-md rounded-3xl overflow-hidden border border-lila/10 hover:border-lila/30 transition-all group flex flex-col" data-aos="fade-up" data-aos-delay="200">
                     <div class="p-8 flex flex-col h-full">
                         <div class="flex items-center gap-3 mb-4">
-                            <span
-                                class="bg-mustard text-lila text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Cau</span>
-                            <span class="text-white/60 text-sm">Set 27 - Oct</span>
+                            <span class="bg-mustard text-lila text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Cau</span>
+                            <span class="text-gray-500 text-sm">Set 27 - Oct</span>
                         </div>
-                        <h3 class="text-2xl font-heading font-bold mb-4 group-hover:text-mustard transition-colors">
-                            Començam un nou curs!!</h3>
-                        <p class="text-earth-50 opacity-80 mb-6 flex-grow line-clamp-4">
-                            Una vegada més tornam a començar! Tindrem Jornada de Neteja i acampada de passes al Puig de
-                            Sant Miquel per qui puja d'any. Després tindrem la reunió de famílies i finalment l'inici
-                            oficial. Moltes ganes i energía per tothom! No oblideu les camises.
+                        <h3 class="text-2xl font-heading font-bold mb-4 text-lila group-hover:text-purple-900 transition-colors">Començam un nou curs!!</h3>
+                        <p class="text-gray-600 mb-6 flex-grow line-clamp-4">
+                            Una vegada més tornam a començar! Tindrem Jornada de Neteja i acampada de passes al Puig de Sant Miquel per qui puja d'any. Després tindrem la reunió de famílies i finalment l'inici oficial. Moltes ganes i energía per tothom! No oblideu les camises.
                         </p>
-                        <a href="https://nuredduna.escoltesiguiesdemallorca.org/2025/09/comencam-un-nou-curs.html"
-                            target="_blank"
-                            class="inline-block border border-white/30 text-white rounded-xl px-5 py-2 text-center hover:bg-white hover:text-lila transition-colors font-medium">Llegir
-                            notícia</a>
+                        <a href="https://nuredduna.escoltesiguiesdemallorca.org/2025/09/comencam-un-nou-curs.html" target="_blank" class="inline-block border border-lila/30 text-lila rounded-xl px-5 py-2 text-center hover:bg-lila hover:text-white transition-colors font-medium">Llegir notícia</a>
                     </div>
                 </article>
 
                 <!-- Post 3 -->
-                <article
-                    class="bg-white/10 backdrop-blur-md rounded-3xl overflow-hidden border border-white/10 hover:border-mustard/50 hover:bg-white/15 transition-all group flex flex-col"
-                    data-aos="fade-up" data-aos-delay="300">
+                <article class="bg-white/60 backdrop-blur-md rounded-3xl overflow-hidden border border-lila/10 hover:border-lila/30 transition-all group flex flex-col" data-aos="fade-up" data-aos-delay="300">
                     <div class="p-8 flex flex-col h-full">
                         <div class="flex items-center gap-3 mb-4">
-                            <span
-                                class="bg-mustard text-lila text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Música</span>
-                            <span class="text-white/60 text-sm">Jun 14</span>
+                            <span class="bg-mustard text-lila text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Música</span>
+                            <span class="text-gray-500 text-sm">Jun 14</span>
                         </div>
-                        <h3 class="text-2xl font-heading font-bold mb-4 group-hover:text-mustard transition-colors">
-                            Final de Curs - Cau Rock '25</h3>
-                        <p class="text-earth-50 opacity-80 mb-6 flex-grow line-clamp-4">
-                            Aquest any no serà una festa normal, serà un FESTIVAL DE MÚSICA!! Animau-vos a participar
-                            actuant. A més a més, els rutes vendran pa amb oli amb preus populars per finançar els
-                            campaments d'estiu! Veniu amb alguna cosa divertida pel cap!
+                        <h3 class="text-2xl font-heading font-bold mb-4 text-lila group-hover:text-purple-900 transition-colors">Final de Curs - Cau Rock '25</h3>
+                        <p class="text-gray-600 mb-6 flex-grow line-clamp-4">
+                            Aquest any no serà una festa normal, serà un FESTIVAL DE MÚSICA!! Animau-vos a participar actuant. A més a més, els rutes vendran pa amb oli amb preus populars per finançar els campaments d'estiu! Veniu amb alguna cosa divertida pel cap!
                         </p>
-                        <a href="https://nuredduna.escoltesiguiesdemallorca.org/2025/05/final-de-curs-2025-cau-rock-25.html"
-                            target="_blank"
-                            class="inline-block border border-white/30 text-white rounded-xl px-5 py-2 text-center hover:bg-white hover:text-lila transition-colors font-medium">Llegir
-                            notícia</a>
+                        <a href="https://nuredduna.escoltesiguiesdemallorca.org/2025/05/final-de-curs-2025-cau-rock-25.html" target="_blank" class="inline-block border border-lila/30 text-lila rounded-xl px-5 py-2 text-center hover:bg-lila hover:text-white transition-colors font-medium">Llegir notícia</a>
                     </div>
                 </article>
             </div>
         </div>
     </section>
 
-    <!-- Famílies Section -->
-    <section id="families" class="py-24 bg-white relative">
+    <!-- Branques Section -->
+    <section id="branques" class="py-24 bg-earth-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-earth-100 rounded-[3rem] p-8 md:p-16 relative overflow-hidden" data-aos="zoom-in">
-                <!-- Decor -->
-                <div class="absolute -right-20 -bottom-20 w-64 h-64 bg-mustard/20 rounded-full blur-3xl"></div>
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <h2 data-i18n="branques.title" class="text-3xl md:text-5xl font-heading font-bold text-lila mb-4">Les Nostres Branques</h2>
+                <p data-i18n="branques.subtitle" class="text-lg text-gray-600">
+                    Ens dividim per grups d'edat per adaptar les activitats al moment vital de cada infant i jove. Pots visitar el blog en directe de cada unitat!
+                </p>
+            </div>
+            <!-- Unit Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+                <!-- Ferrerets -->
+                <div class="unit-card flex flex-col group bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 relative overflow-hidden border-b-4 border-unit-ferrerets"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-unit-ferrerets/10 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110"></div>
+                    <span data-i18n="branques.ferrerets.age" class="inline-block px-3 py-1 self-start bg-unit-ferrerets/20 text-yellow-800 rounded-full text-sm font-bold mb-4">6 - 8 anys</span>
+                    <h3 data-i18n="branques.ferrerets.name" class="text-2xl font-heading font-bold text-gray-900 mb-2">Ferrerets</h3>
+                    <p data-i18n="branques.ferrerets.quote" class="text-unit-ferrerets font-medium mb-4 italic">"Petits passos cap a l'aventura."</p>
+                    <p data-i18n="branques.ferrerets.desc" class="text-gray-600 flex-grow text-sm mb-6">Descobreixen el món per primera vegada amb els seus companys a través del joc i la imaginació.</p>
+                    <a href="https://ferrerets.escoltesiguiesdemallorca.org/" data-i18n="branques.ferrerets.btn" target="_blank" class="text-center mt-auto bg-unit-ferrerets/10 text-unit-ferrerets hover:bg-unit-ferrerets hover:text-white py-2 rounded-xl transition-colors font-semibold">Veure el blog</a>
+                </div>
 
-                <div class="relative z-10 grid md:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <h2 data-i18n="families.title"
-                            class="text-3xl md:text-5xl font-heading font-bold text-lila mb-6">Racó de les Famílies</h2>
-                        <p data-i18n="families.subtitle" class="text-lg text-gray-700 mb-8">
-                            Les famílies sou una part fonamental de l'agrupament. Aquí teniu informació important
-                            referent a documents i prevenció.
-                        </p>
-                        <div class="space-y-4">
-                            <!-- Download Links -->
-                            <a href="https://aegnuredduna.blogspot.com/p/documents-interessants-de-lentitat.html"
-                                target="_blank"
-                                class="flex items-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow group border border-gray-100">
-                                <div class="bg-lila/10 p-3 rounded-lg mr-4 group-hover:bg-lila/20 transition-colors">
-                                    <svg class="w-6 h-6 text-lila" fill="none" stroke="currentColor"
-                                        viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <div class="flex-1">
-                                    <h4 data-i18n="families.doc_1_title" class="font-bold text-gray-900">Protocol per la
-                                        prevenció</h4>
-                                    <p data-i18n="families.doc_1_desc"
-                                        class="text-sm text-gray-500 hover:text-gray-600">Protocol per la prevenció de
-                                        l'abús sexual al cau</p>
-                                </div>
-                            </a>
-                            <a href="http://nuredduna.escoltesiguiesdemallorca.org/p/documents-de-lagrupament-que-poden-ser.html"
-                                target="_blank"
-                                class="flex items-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow group border border-gray-100">
-                                <div class="bg-lila/10 p-3 rounded-lg mr-4 group-hover:bg-lila/20 transition-colors">
-                                    <svg class="w-6 h-6 text-lila" fill="none" stroke="currentColor"
-                                        viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <div class="flex-1">
-                                    <h4 data-i18n="families.doc_2_title" class="font-bold text-gray-900">Documents de
-                                        l'AEG</h4>
-                                    <p data-i18n="families.doc_2_desc" class="text-sm text-gray-500">Formularis
-                                        importants i fitxa de salut</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="hidden md:block">
-                        <img src="https://images.unsplash.com/photo-1517486808906-6a1bd2541b4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                            alt="Material de muntanya, motxilla"
-                            class="rounded-2xl shadow-lg transform rotate-2 hover:rotate-0 transition-transform duration-500">
-                    </div>
+                <!-- Llops i Daines -->
+                <div class="unit-card flex flex-col group bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 relative overflow-hidden border-b-4 border-unit-llops"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-unit-llops/10 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110"></div>
+                    <span data-i18n="branques.llops.age" class="inline-block px-3 py-1 self-start bg-unit-llops/20 text-orange-800 rounded-full text-sm font-bold mb-4">8 - 11 anys</span>
+                    <h3 data-i18n="branques.llops.name" class="text-2xl font-heading font-bold text-gray-900 mb-2">Llops i Daines</h3>
+                    <p data-i18n="branques.llops.quote" class="text-unit-llops font-medium mb-4 italic">"Tant com puc!"</p>
+                    <p data-i18n="branques.llops.desc" class="text-gray-600 flex-grow text-sm mb-6">Aprenen a viure en grup (l'estol), assumint petites responsabilitats i vivint grans caceres.</p>
+                    <a href="https://llid.escoltesiguiesdemallorca.org/" data-i18n="branques.llops.btn" target="_blank" class="text-center mt-auto bg-unit-llops/10 text-unit-llops hover:bg-unit-llops hover:text-white py-2 rounded-xl transition-colors font-semibold">Veure el blog</a>
+                </div>
+
+                <!-- Rangers i Guies -->
+                <div class="unit-card flex flex-col group bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 relative overflow-hidden border-b-4 border-unit-rangers"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-unit-rangers/10 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110"></div>
+                    <span data-i18n="branques.rangers.age" class="inline-block px-3 py-1 self-start bg-unit-rangers/20 text-blue-800 rounded-full text-sm font-bold mb-4">11 - 14 anys</span>
+                    <h3 data-i18n="branques.rangers.name" class="text-2xl font-heading font-bold text-gray-900 mb-2">Rangers i Guies</h3>
+                    <p data-i18n="branques.rangers.quote" class="text-unit-rangers font-medium mb-4 italic">"Sempre a punt!"</p>
+                    <p data-i18n="branques.rangers.desc" class="text-gray-600 flex-grow text-sm mb-6">L'esperit d'aventura i l'exploració marquen aquesta etapa, treballant en petits grups (patrulles).</p>
+                    <a href="http://rig.escoltesiguiesdemallorca.org/" data-i18n="branques.rangers.btn" target="_blank" class="text-center mt-auto bg-unit-rangers/10 text-unit-rangers hover:bg-unit-rangers hover:text-white py-2 rounded-xl transition-colors font-semibold">Veure el blog</a>
+                </div>
+
+                <!-- Pioners i Caravel·les -->
+                <div class="unit-card flex flex-col group bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 relative overflow-hidden border-b-4 border-unit-pioners"
+                    data-aos="fade-up" data-aos-delay="400">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-unit-pioners/10 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110"></div>
+                    <span data-i18n="branques.pioners.age" class="inline-block px-3 py-1 self-start bg-unit-pioners/20 text-red-800 rounded-full text-sm font-bold mb-4">14 - 17 anys</span>
+                    <h3 data-i18n="branques.pioners.name" class="text-2xl font-heading font-bold text-gray-900 mb-2">Pioners i C.</h3>
+                    <p data-i18n="branques.pioners.quote" class="text-unit-pioners font-medium mb-4 italic">"Fent camí!"</p>
+                    <p data-i18n="branques.pioners.desc" class="text-gray-600 flex-grow text-sm mb-6">Prenen el protagonisme dels seus projectes (empreses), reflexionant sobre els objectius.</p>
+                    <a href="http://pic.escoltesiguiesdemallorca.org/" data-i18n="branques.pioners.btn" target="_blank" class="text-center mt-auto bg-unit-pioners/10 text-unit-pioners hover:bg-unit-pioners hover:text-white py-2 rounded-xl transition-colors font-semibold">Veure el blog</a>
+                </div>
+
+                <!-- Rutes -->
+                <div class="unit-card flex flex-col group bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 relative overflow-hidden border-b-4 border-unit-rutes"
+                    data-aos="fade-up" data-aos-delay="500">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-unit-rutes/10 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110"></div>
+                    <span data-i18n="branques.rutes.age" class="inline-block px-3 py-1 self-start bg-unit-rutes/20 text-teal-800 rounded-full text-sm font-bold mb-4">17 - 19 anys</span>
+                    <h3 data-i18n="branques.rutes.name" class="text-2xl font-heading font-bold text-gray-900 mb-2">Rutes</h3>
+                    <p data-i18n="branques.rutes.quote" class="text-unit-rutes font-medium mb-4 italic">"Servir!"</p>
+                    <p data-i18n="branques.rutes.desc" class="text-gray-600 flex-grow text-sm mb-6">Culminació de l'etapa educativa. El servei a la societat i el compromís personal són els eixos.</p>
+                    <a href="http://ruta.escoltesiguiesdemallorca.org/" data-i18n="branques.rutes.btn" target="_blank" class="text-center mt-auto bg-unit-rutes/10 text-unit-rutes hover:bg-unit-rutes hover:text-white py-2 rounded-xl transition-colors font-semibold">Veure el blog</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contacte Section -->
-    <section id="contacte" class="py-24 bg-white border-t border-earth-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-16">
-                <!-- Contact Info & Map (Placeholder) -->
-                <div data-aos="fade-right">
-                    <h2 data-i18n="contacte.title" class="text-3xl md:text-5xl font-heading font-bold text-lila mb-6">
-                        Contacta amb Nosaltres</h2>
-                    <p data-i18n="contacte.subtitle" class="text-gray-600 mb-8 text-lg">
-                        Tens algun dubte? Vols apuntar el teu fill/a? Escriu-nos i et respondrem tan aviat com ens sigui
-                        possible.
-                    </p>
 
-                    <!-- Map Placeholder -->
-                    <div
-                        class="bg-earth-100 h-64 rounded-2xl mb-8 flex items-center justify-center overflow-hidden relative shadow-inner">
-                        <div
-                            class="absolute inset-0 bg-[url('https://maps.googleapis.com/maps/api/staticmap?center=Palma,Mallorca&zoom=10&size=600x300&maptype=roadmap&sensor=false')] bg-cover bg-center opacity-50 sepia-[.3]">
-                        </div>
-                        <div class="bg-white/90 backdrop-blur p-4 rounded-xl shadow-md z-10 text-center">
-                            <svg class="w-8 h-8 text-mustard mx-auto mb-2" fill="none" stroke="currentColor"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
-                                </path>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                            </svg>
-                            <span data-i18n="contacte.location_title" class="font-bold text-lila block">El nostre
-                                Cau</span>
-                            <span data-i18n="contacte.location_desc" class="text-sm text-gray-600">Palma, Illes
-                                Balears</span>
-                        </div>
-                    </div>
-
-                    <div class="flex items-center gap-4 text-gray-700">
-                        <svg class="w-6 h-6 text-lila" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
-                            </path>
-                        </svg>
-                        <a href="mailto:info@aeignuredduna.cat" data-i18n="contacte.email_link"
-                            class="hover:text-lila transition-colors font-medium">Contacte a través del blog o form</a>
-                    </div>
-                </div>
-
-                <!-- Contact Form -->
-                <div data-aos="fade-left">
-                    <form class="bg-earth-50 p-8 rounded-3xl shadow-sm border border-earth-100">
-                        <div class="mb-6">
-                            <label for="name" data-i18n="contacte.form.name"
-                                class="block text-sm font-medium text-gray-700 mb-2">Nom i Llinatges</label>
-                            <input type="text" id="name"
-                                class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-lila focus:ring-2 focus:ring-lila/20 outline-none transition-all bg-white">
-                        </div>
-                        <div class="mb-6">
-                            <label for="email" data-i18n="contacte.form.email"
-                                class="block text-sm font-medium text-gray-700 mb-2">Correu Electrònic</label>
-                            <input type="email" id="email"
-                                class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-lila focus:ring-2 focus:ring-lila/20 outline-none transition-all bg-white">
-                        </div>
-                        <div class="mb-6">
-                            <label for="unit" data-i18n="contacte.form.unit"
-                                class="block text-sm font-medium text-gray-700 mb-2">Branca d'interès</label>
-                            <select id="unit"
-                                class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-lila focus:ring-2 focus:ring-lila/20 outline-none transition-all bg-white appearance-none">
-                                <option value="" disabled selected data-i18n="contacte.form.select_default">Selecciona
-                                    una opció...</option>
-                                <option value="ferrerets" data-i18n="contacte.form.opt_ferrerets">Ferrerets</option>
-                                <option value="llops" data-i18n="contacte.form.opt_llops">Llops i Daines</option>
-                                <option value="rangers" data-i18n="contacte.form.opt_rangers">Rangers i Guies</option>
-                                <option value="pioners" data-i18n="contacte.form.opt_pioners">Pioners i Caravel·les
-                                </option>
-                                <option value="rutes" data-i18n="contacte.form.opt_rutes">Rutes</option>
-                                <option value="cap" data-i18n="contacte.form.opt_dubte">Dubte general</option>
-                            </select>
-                        </div>
-                        <div class="mb-6">
-                            <label for="message" data-i18n="contacte.form.message"
-                                class="block text-sm font-medium text-gray-700 mb-2">Missatge</label>
-                            <textarea id="message" rows="4"
-                                class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-lila focus:ring-2 focus:ring-lila/20 outline-none transition-all bg-white resize-none"></textarea>
-                        </div>
-                        <button type="submit" data-i18n="contacte.form.btn_submit"
-                            class="w-full bg-lila text-white hover:bg-purple-900 px-6 py-4 rounded-xl font-bold text-lg shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5">
-                            Enviar Missatge
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer class="bg-lila pt-16 pb-8 text-earth-100">
@@ -612,11 +309,9 @@
             <div class="grid md:grid-cols-3 gap-12 mb-12">
                 <!-- Branding -->
                 <div>
-                    <a href="#" class="flex items-center gap-2 mb-6">
-                        <div
-                            class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-lila font-heading font-bold text-xl">
-                            N
-                        </div>
+                    <a href="index.html" class="flex items-center gap-3 mb-6">
+                        <img src="img/Logonuredduna.jpg" alt="Logo AEG Nuredduna"
+                            class="h-12 w-auto object-contain rounded-lg">
                         <span data-i18n="footer.brand_name" class="font-heading font-bold text-2xl text-white">AEG
                             Nuredduna</span>
                     </a>

@@ -42,20 +42,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileLinks = document.querySelectorAll('.mobile-link');
     let isMenuOpen = false; // State to track menu closure properly
 
-    btn.addEventListener('click', () => {
-        isMenuOpen = !isMenuOpen;
-        if (isMenuOpen) {
-            menu.classList.remove('hidden'); // Show menu
-            // Basic slide-down effect trick
-            menu.style.maxHeight = menu.scrollHeight + "px";
-            menu.style.opacity = '1';
-        } else {
-            closeMenu();
-        }
-    });
+    if (btn && menu) {
+        btn.addEventListener('click', () => {
+            isMenuOpen = !isMenuOpen;
+            if (isMenuOpen) {
+                menu.classList.remove('hidden'); // Show menu
+                // Basic slide-down effect trick
+                menu.style.maxHeight = menu.scrollHeight + "px";
+                menu.style.opacity = '1';
+            } else {
+                closeMenu();
+            }
+        });
+    }
 
     // Helper to close the mobile menu
     function closeMenu() {
+        if (!menu) return;
         isMenuOpen = false;
         menu.style.maxHeight = '0px';
         menu.style.opacity = '0';
@@ -79,15 +82,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // 3. Sticky Navigation visual effect
     const header = document.getElementById('main-header');
     
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 20) {
-            header.classList.add('shadow-md', 'bg-earth-50/95');
-            header.classList.remove('bg-earth-50/90', 'shadow-sm');
-        } else {
-            header.classList.add('bg-earth-50/90', 'shadow-sm');
-            header.classList.remove('shadow-md', 'bg-earth-50/95');
-        }
-    });
+    if (header) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                header.classList.add('shadow-md', 'bg-earth-50/95');
+                header.classList.remove('bg-earth-50/90', 'shadow-sm');
+            } else {
+                header.classList.add('bg-earth-50/90', 'shadow-sm');
+                header.classList.remove('shadow-md', 'bg-earth-50/95');
+            }
+        });
+    }
 
     // 4. Form Submission Mock
     const form = document.querySelector('form');
